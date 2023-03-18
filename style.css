@@ -157,7 +157,7 @@ main {
 
 
 @media screen and (max-width: 768px) {
-  .btn-menu-toggle {
+  .nav-toggle {
     display: block;
   }
   .menu-items {
@@ -175,7 +175,7 @@ main {
 }
 
 @media screen and (min-width: 767px) {
-  .btn-menu-toggle {
+  .nav-toggle {
     display: block;
   }
   .menu-items {

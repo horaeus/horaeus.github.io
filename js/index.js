@@ -1,4 +1,4 @@
-const menuBtn = document.querySelector('nav .btn-menu-toggle');
+const menuBtn = document.querySelector('nav .nav-toggle');
 const menu = document.querySelector('nav #primary-menu');
 
 let menuOpen = false;
