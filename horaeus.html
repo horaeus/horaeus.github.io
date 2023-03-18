@@ -1,29 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>HORAEUS</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <div class="container">
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>HORAEUS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
     <header>
-      <div class="logo">
-        <img src="https://drive.google.com/uc?id=1z5QMIHNZJx4egpgTm_jXn8K3kY9KFniP" alt="Horaeus Logo">
-      </div>
       <nav>
-        <button class="menu-btn">&#9776;</button>
-        <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+        <button class="btn-menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+        <div class="menu-items">
+          <ul id="primary-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <span class="text">HORAEUS</span>     
       </nav>
     </header>
     <main>
-      
+      <section>
+        <div class="product-grid">
+          <div class="product">
+            <img src="https://drive.google.com/uc?id=1oPpChcwqYym3D_VHrfM0uaT9QsMSTBUI" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+          <div class="product">
+            <img src="https://drive.google.com/uc?id=1oPpChcwqYym3D_VHrfM0uaT9QsMSTBUI" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+          <div class="product">
+            <img src="https://drive.google.com/uc?id=1oPpChcwqYym3D_VHrfM0uaT9QsMSTBUI" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus nulla id nibh varius, sed feugiat est malesuada. Duis sed semper lacus, eget auctor lorem. Aenean ac dignissim eros. Cras quis nulla varius, tincidunt elit vitae, scelerisque lectus. Integer euismod, felis nec ultrices dapibus, sapien metus bibendum odio, non posuere odio sapien non magna. Donec varius augue odio, vel iaculis urna facilisis et. Donec sit amet luctus nisl.</p>
+      </section>
+
+      <section>
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="button">Send Message</button>
+        </form>
+      </section>
     </main>
-  </div>
-</body>
+
+    <footer>
+      <p>&copy; 2023 My Online Store. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
