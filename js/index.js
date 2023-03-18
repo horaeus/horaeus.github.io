@@ -1,20 +1,5 @@
-const menuButton = document.querySelector('.btn-menu-toggle');
-const primaryMenu = document.querySelector('#primary-menu');
-
-menuButton.addEventListener('click', () => {
-  primaryMenu.classList.toggle('active');
-});
-
-/*
-$(document).ready(function() {
-    $(".menu-toggle").click(function() {
-      $("#primary-menu").toggleClass("active");
-    });
-  });
-*/
-
-const menuBtn = document.querySelector('.btn-menu-toggle');
-const menu = document.querySelector('#primary-menu');
+const menuBtn = document.querySelector('nav .btn-menu-toggle');
+const menu = document.querySelector('nav #primary-menu');
 
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
