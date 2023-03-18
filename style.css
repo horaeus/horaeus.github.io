@@ -1,10 +1,8 @@
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  box-shadow: none;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -16,8 +14,17 @@ header {
   justify-content: center;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
 .logo img {
   max-height: 50px;
+}
+
+nav {
+  margin-left: auto;
 }
 
 .menu-toggle {
@@ -62,8 +69,9 @@ header {
   .menu-toggle {
     display: block;
   }
+}
 
-  .menu {
+ .menu {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -73,7 +81,7 @@ header {
     background-color: #fff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     z-index: 99;
-  }
+ }
 
   .menu ul {
     flex-direction: column;
@@ -90,4 +98,3 @@ header {
   .menu-toggle:focus + .menu {
     display: flex;
   }
-}
